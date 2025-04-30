@@ -1,0 +1,105 @@
+[
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Fiction",
+      "availability": "Available",
+      "coverImage": "/Images/TheGreatGatsby.jpeg"
+    },
+    
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian",
+      "availability": "Checked Out",
+      "coverImage": "/Images/1984.jpeg"
+    },
+
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "Romance",
+      "availability": "Available",
+      "coverImage": "/Images/PrideandPrejudice.jpeg"
+    },
+
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Fiction",
+      "availability": "Available",
+      "coverImage": "/Images/ToKillaMockingbird.jpeg"
+    },
+
+    {
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "genre": "Dystopian",
+      "availability": "Available",
+      "coverImage": "/Images/BraveNewWorld.jpeg"
+    },
+
+    {
+      "title": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "genre": "Romance",
+      "availability": "Available",
+      "coverImage": "/Images/JaneEyre.jpeg"
+    },
+
+    {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "availability": "Checked Out",
+      "coverImage": "/Images/TheHobbit.jpeg"
+    },
+    
+    {
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "availability": "Available",
+      "coverImage": "/Images/TheLordoftheRings.jpeg"
+    },
+
+    {
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "genre": "Satire",
+      "availability": "Available",
+      "coverImage": "/Images/AnimalFarm.jpeg"
+    },
+
+    {
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "genre": "Psychological Fiction",
+      "availability": "Checked Out",
+      "coverImage": "/Images/CrimeandPunishment.png"
+    },
+
+    {
+      "title": "The Grapes of Wrath",
+      "author": "John Steinbeck",
+      "genre": "Fiction",
+      "availability": "Available",
+      "coverImage": "/Images/TheGrapesofWrath.jpeg"
+    },
+
+    {
+      "title": "The Scarlet Letter",
+      "author": "Nathaniel Hawthorne",
+      "genre": "Historical Fiction",
+      "availability": "Checked Out",
+      "coverImage": "/Images/TheScarletLetter.jpeg"
+    },
+    
+    {
+      "title": "The Bell Jar",
+      "author": "Sylvia Plath",
+      "genre": "Autobiographical Fiction",
+      "availability": "Available",
+      "coverImage": "/Images/TheBellJar.jpeg"
+    }
+  ]

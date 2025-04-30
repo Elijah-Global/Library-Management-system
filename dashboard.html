@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librarian Dashboard</title>
+  <link rel="stylesheet" href="/style2.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Librarian Dashboard</h1>
+    <a href="/index2.html">Back to Catalog</a>
+  </header>
+  <main>
+    <section>
+      <h2>Library Statistics</h2>
+      <p>Total Books Borrowed: <span id="total-borrowed">0</span></p>
+      <p>Total Books Available: <span id="total-available">0</span></p>
+    </section>
+    <section>
+      <h2>Genre Distribution</h2>
+      <canvas id="genreChart" width="400" height="200"></canvas>
+    </section>
+    <section>
+      <h2>Most Borrowed Books</h2>
+      <ul id="most-borrowed"></ul>
+    </section>
+  </main>
+
+  <script src="/dashboard.js"></script>
+</body>
+</html>
