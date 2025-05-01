@@ -108,7 +108,6 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
 });
 
 // Login form submission
-// Login form submission
 document.getElementById("loginForm").addEventListener("submit", function (e) {
   e.preventDefault();
   let isValid = true;
