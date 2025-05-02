@@ -17,7 +17,6 @@ const signupConfirmPassword = document.getElementById("confirmPassword");
 // Navigation and toggle links
 const showHome = document.getElementById("showHome");
 const showLogin = document.getElementById("showLogin");
-const showLogins = document.getElementById("showLogins");
 const showRegister = document.getElementById("showRegister");
 const showSignupLink = document.getElementById("showSignup");
 const showLoginLink = document.getElementById("showLogin");
