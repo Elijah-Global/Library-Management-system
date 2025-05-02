@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("logoutLink").addEventListener("click", () => {
     localStorage.removeItem("loggedInUser"); // Clear the logged-in user data
-    window.location.href = "/index.html"; // Redirect to login page
+    window.location.href = "/index.html"; 
   });
   
 
