@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalBorrowedEl = document.getElementById("total-borrowed");
     const totalAvailableEl = document.getElementById("total-available");
     const genreChartEl = document.getElementById("genreChart");
-    const mostBorrowedEl = document.getElementById("most-borrowed");
   
     // Load books and borrowing history from localStorage
     const books = JSON.parse(localStorage.getItem("books")) || [];
@@ -51,8 +50,5 @@ document.addEventListener("DOMContentLoaded", () => {
       .sort((a, b) => b[1] - a[1])
       .slice(0, 5); // Top 5 most borrowed books
   
-    // Display most borrowed books
-    mostBorrowedEl.innerHTML = sortedBorrowCounts.map(([title, count]) => `
-      <li>${title} - Borrowed ${count} times</li>
-    `).join("");
+  
   });

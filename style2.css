@@ -76,7 +76,11 @@ header a:hover {
 .book:hover {
   transform: translateY(-5px);
 }
-
+#genreChart {
+  width: 300px !important; /* Set desired width */
+  height: 380px !important; /* Set desired height */
+  margin: 10px auto !important;
+}
 .book-cover {
   max-width: 100%;
   height: 250px;
@@ -126,3 +130,8 @@ button {
 .remove-btn:hover {
   opacity: 0.9;
 }
+
+/* .form {
+  background-color: #ccc;
+  width: 50%;
+} */

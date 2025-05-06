@@ -121,6 +121,8 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   }
 
   if (isValid) {
+    const loginEmail = document.getElementById("email");
+const loginPassword = document.getElementById("password");
     // Validate user credentials
     const users = JSON.parse(localStorage.getItem("users")) || [];
     const user = users.find(
@@ -128,14 +130,25 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     );
 
     if (user) {
-      alert("Login successful!");
-      // Store the logged-in user in localStorage
+      if (loginEmail.value === "elijaholabisi@gmail.com"  && loginPassword.value === "Admin12345") {
+        alert("Login successful!");
+         // Store the logged-in user in localStorage
       localStorage.setItem("loggedInUser", JSON.stringify(user)); 
-      window.location.href = "/index2.html"; // Redirect to catalog page
-    } else {
-      alert("Invalid email or password. Please try again.");
-    }
+      window.location.href = "/admin.html"; // Redirect to catalog page
+      return
+      }
+      
+     
+     else {
+      alert(`Welcome`)
+      localStorage.setItem("loggedInUser", JSON.stringify(user)); 
+      window.location.href = "/user.html"; // Redirect to catalog page
+      return
+
+    };
   }
+  alert("Invalid email or password. Please try again.");
+}
 });
 
 
