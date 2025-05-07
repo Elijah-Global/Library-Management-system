@@ -123,6 +123,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   if (isValid) {
     const loginEmail = document.getElementById("email");
 const loginPassword = document.getElementById("password");
+
     // Validate user credentials
     const users = JSON.parse(localStorage.getItem("users")) || [];
     const user = users.find(
