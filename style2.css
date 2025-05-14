@@ -77,7 +77,7 @@ header a:hover {
   transform: translateY(-5px);
 }
 #genreChart {
-  width: 300px !important; /* Set desired width */
+  width: 400px !important; /* Set desired width */
   height: 380px !important; /* Set desired height */
   margin: 10px auto !important;
 }

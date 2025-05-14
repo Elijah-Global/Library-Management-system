@@ -2,10 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalBorrowedEl = document.getElementById("total-borrowed");
     const totalAvailableEl = document.getElementById("total-available");
     const genreChartEl = document.getElementById("genreChart");
-  
+  const total = document.getElementById('total');
     // Load books and borrowing history from localStorage
     const books = JSON.parse(localStorage.getItem("books")) || [];
-    const borrowingHistory = JSON.parse(localStorage.getItem("borrowingHistory")) || [];
   
     // Calculate total borrowed and available books
     const totalBorrowed = books.filter(book => book.availability === "Checked Out").length;
@@ -14,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Update statistics in the DOM
     totalBorrowedEl.textContent = totalBorrowed;
     totalAvailableEl.textContent = totalAvailable;
-  
+    total.innerHTML = `<h2>${books.length}</h2>` ;
     // Calculate genre distribution
     const genreCounts = books.reduce((acc, book) => {
       acc[book.genre] = (acc[book.genre] || 0) + 1;
@@ -40,15 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   
-    // Calculate most borrowed books
-    const borrowCounts = borrowingHistory.reduce((acc, record) => {
-      acc[record.title] = (acc[record.title] || 0) + 1;
-      return acc;
-    }, {});
-  
-    const sortedBorrowCounts = Object.entries(borrowCounts)
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 5); // Top 5 most borrowed books
-  
+
   
   });
