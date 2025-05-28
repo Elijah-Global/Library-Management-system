@@ -28,6 +28,17 @@
       .modal-content {
         border-radius: 10px;
       }
+    .home{
+      display: grid !important;
+      grid-template-columns: auto auto auto;
+      width: 100%;
+      gap: 25px;
+    }
+    .shelf{
+      box-shadow:  0 0 5px 2px rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      border-radius: 10px !important;
+    }
       .book {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -69,6 +80,7 @@
         margin: 0 !important;
         line-height: normal;
       }
+      
     </style>
   </head>
   <body>
@@ -187,7 +199,7 @@
     </div>
     <section class="borrow" style="display: none;">
         <h3>Borrowed Book</h3>
-        <div class="home"></div>
+        <div class="home row"></div>
     </section>
     <section class="book"></section>
     <!-- Contact Section -->
