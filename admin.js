@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     filteredBooks.forEach(book => {
       const item = document.createElement("div");
-      item.className = "book-item d-flex gap-3 mb-3 p-2 border rounded";
+      item.className = "book-item gap-3 m-3 p-2 border rounded";
       item.innerHTML = `
         <img src="${book.coverImage}" alt="${book.title}" width="100" height="150" />
         <div>

@@ -9,6 +9,21 @@
     rel="stylesheet"
   />
   <!-- <link rel="stylesheet" href="/style2.css" /> -->
+   <style>
+    #book-list{
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+    #book-list > div{
+      box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.3);
+    }
+    @media  screen and (max-width: 800px) {
+      #book-list{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+   </style>
 </head>
 <body class="bg-light">
   <header class="bg-primary text-white py-3">
@@ -92,7 +107,7 @@
 
     <section id="book-catalog" class="mt-5">
       <h3 class="mb-3">Book Catalog</h3>
-      <div id="book-list" class="d-flex flex-column gap-3">
+      <div id="book-list" class="">
        
       </div>
     </section>
